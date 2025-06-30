@@ -1,0 +1,11 @@
+Path,Type,Primary Purpose,Notes
+"src/app/page.tsx","Page","Main landing page of the website.","Contains all sections: Hero, How it Works, Pricing, Testimonials, etc."
+"src/app/layout.tsx","Layout","Main site layout template.","Wraps all pages. Includes <Header> and <Footer>."
+"src/app/globals.css","Styling","Global CSS variables and theme.","Defines the color palette (e.g., --emotional-pink, --accent-gold)."
+"src/components/SongCreationForm.tsx","Component","The core interactive component for creating songs.","Handles the multi-step form, plan selection, upsell, and revision flow."
+"src/app/test-pago/actions.ts","Server Logic","Backend functions that call the AI flows.","Contains createSongAction, createAlbumArtAction, and reviseSongAction. Securely runs on the server."
+"src/ai/flows/generate-song-lyrics-and-audio.ts","AI Flow","Defines the prompts and logic for generating the song's lyrics and audio.","The primary 'brain' for song creation."
+"src/ai/flows/generate-album-art.ts","AI Flow","Defines the prompt and logic for generating the album cover image.","Handles the image generation process."
+"src/ai/flows/incorporate-user-requests-into-song.ts","AI Flow","Defines the prompt and logic for revising a song based on user feedback.","Manages the interactive revision process."
+"tailwind.config.ts","Configuration","Tailwind CSS configuration.","Defines fonts, colors, and custom animations."
+"package.json","Configuration","Project dependencies and scripts.","Lists all required libraries (Next.js, Genkit, etc.) and run commands (npm run dev)."
