@@ -720,7 +720,13 @@ export function SongCreationForm({ songTypeParam, planParam }: { songTypeParam: 
                       </Alert>
                     )}
                     <FormField control={form.control} name="songType" render={({ field }) => ( <FormItem className="hidden"><FormControl><Input {...field} /></FormControl></FormItem> )}/>
-                     <FormField control={form.control} name="famousCollaboration" render={({ field }) => ( <FormItem className="hidden"><FormControl><Input {...field} /></FormControl></FormItem> )}/>
+                    <FormField control={form.control} name="famousCollaboration" render={({ field }) => (
+                      <FormItem className="hidden">
+                        <FormControl>
+                          <Input {...field} value={String(field.value)} />
+                        </FormControl>
+                      </FormItem>
+                    )}/>
                     <FormField control={form.control} name="styleVoice" render={({ field }) => ( <FormItem className="hidden"><FormControl><Input {...field} /></FormControl></FormItem> )}/>
                     <FormField control={form.control} name="aiModel" render={({ field }) => ( <FormItem className="hidden"><FormControl><Input {...field} /></FormControl></FormItem> )}/>
 
