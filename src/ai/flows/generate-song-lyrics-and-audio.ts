@@ -34,9 +34,9 @@ const commonPromptConfig = {
   output: {schema: z.object({lyrics: z.string()})},
   config: {
     safetySettings: [
-      { category: 'HARM_CATEGORY_DANGEROUS_CONTENT', threshold: 'BLOCK_ONLY_HIGH' },
-      { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_MEDIUM_AND_ABOVE' },
-      { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_MEDIUM_AND_ABOVE' },
+      { category: 'HARM_CATEGORY_DANGEROUS_CONTENT' as const, threshold: 'BLOCK_ONLY_HIGH' as const },
+      { category: 'HARM_CATEGORY_HATE_SPEECH' as const, threshold: 'BLOCK_MEDIUM_AND_ABOVE' as const },
+      { category: 'HARM_CATEGORY_HARASSMENT' as const, threshold: 'BLOCK_MEDIUM_AND_ABOVE' as const },
     ],
   },
   prompt: `Eres un experto en la declamación poética y la interpretación de "Spoken Word". Tu tarea es escribir la letra de una canción y luego prepararla para una interpretación vocal dramatizada y rítmica usando SSML (Speech Synthesis Markup Language).
